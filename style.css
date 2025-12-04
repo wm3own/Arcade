@@ -1,0 +1,67 @@
+/* Fundo Mario */
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("fundoprincipal.png");
+    background-size: cover;
+    background-position: center;
+}
+
+/* Grid central */
+.menu {
+    display: grid;
+    grid-template-columns: 20% 1fr 20%;
+    grid-template-rows: auto;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+}
+
+/* Imagem da seta esquerda */
+.arrow.left {
+    background-image: url("seta esquerda.png");
+    width: 15vw;
+    height: 15vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+/* Imagem da seta direita */
+.arrow.right {
+    background-image: url("seta direita.png");
+    width: 15vw;
+    height: 15vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.arrow:hover {
+    transform: scale(1.15);
+    transition: 0.2s;
+}
+
+.arrow.left, .arrow.right {
+    margin-top: 25vh;
+}
+
+/* Responsividade */
+@media(max-width:768px){
+    .arrow.left, .arrow.right{
+        width: 20vw;
+        height: 20vw;
+        margin-top: 20vh;
+    }
+}
+
+@media(max-width:480px){
+    .arrow.left, .arrow.right{
+        width: 25vw;
+        height: 25vw;
+        margin-top: 15vh;
+    }
+}

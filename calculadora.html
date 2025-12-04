@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Calculadora Pixel Art</title>
+  <link rel="stylesheet" href="calculadora.css" />
+</head>
+<body>
+     
+     <!-- Botão de voltar -->
+  <a href="index.html">
+    <img src="seta direita.png" class="voltar" alt="Voltar">
+  </a>
+
+  <h1>Calculadora do Mario</h1>
+  
+  <div class="calculator">
+    <div id="display">0</div>
+    
+    <div class="buttons">
+      <!-- Linha 1 -->
+      <button class="btn btn-blue" data-action="clear">C</button>
+      <button class="btn btn-red" data-action="backspace">⌫</button>
+      <button class="btn btn-red" data-action="percent">%</button>
+      <button class="btn btn-red" data-action="divide">÷</button>
+      
+      <!-- Linha 2 -->
+      <button class="btn btn-yellow" data-number="7">7</button>
+      <button class="btn btn-yellow" data-number="8">8</button>
+      <button class="btn btn-yellow" data-number="9">9</button>
+      <button class="btn btn-red" data-action="multiply">×</button>
+      
+      <!-- Linha 3 -->
+      <button class="btn btn-yellow" data-number="4">4</button>
+      <button class="btn btn-yellow" data-number="5">5</button>
+      <button class="btn btn-yellow" data-number="6">6</button>
+      <button class="btn btn-red" data-action="subtract">−</button>
+      
+      <!-- Linha 4 -->
+      <button class="btn btn-yellow" data-number="1">1</button>
+      <button class="btn btn-yellow" data-number="2">2</button>
+      <button class="btn btn-yellow" data-number="3">3</button>
+      <button class="btn btn-red" data-action="add">+</button>
+      
+      <!-- Linha 5 -->
+      <button class="btn btn-green" data-number="0">0</button>
+      <button class="btn btn-green" data-action="decimal">.</button>
+      <button class="btn btn-blue" data-action="equals">=</button>
+    </div>
+  </div>
+
+  <h2><a href="tabuada.html">Ir para Tabuada</a></h2>
+
+  <div id="history">
+    <h3>Histórico</h3>
+    <ul id="history-list"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
