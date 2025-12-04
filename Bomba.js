@@ -42,3 +42,4 @@ function finalizarJogo() {
   document.querySelector(".tela").remove(); // remove a tela branca
   document.getElementById("victory-sound").play(); // toca som de vitória
 }
+
